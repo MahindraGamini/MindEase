@@ -11,7 +11,7 @@ export const authOptions = {
   pages: {
     signIn: "/login", // Redirect to custom login page
   },
-  debug: true, // Enable debug mode
+  debug: true, 
   session: {
     strategy: "jwt",
     maxAge: 30 * 24 * 60 * 60, // 30 days

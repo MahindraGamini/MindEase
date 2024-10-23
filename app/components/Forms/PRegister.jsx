@@ -46,14 +46,14 @@ const PregisterForm = () => {
       const userCredential = await createUserWithEmailAndPassword(auth, data.email, data.password);
       const user = userCredential.user;
 
-      // Upload image if selected
+      
       if (image) {
         const storage = getStorage();
         const storageRef = ref(storage, `users/${user.uid}/profile.jpg`);
         await uploadBytes(storageRef, image);
         const downloadURL = await getDownloadURL(storageRef);
 
-        // Save the download URL in Firestore
+        
         await setDoc(doc(db, "doctors", user.uid), {
           name: data.name,
           email: data.email,

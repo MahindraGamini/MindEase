@@ -9,6 +9,7 @@ import ExitToAppRoundedIcon from '@mui/icons-material/ExitToAppRounded';
 import FavoriteRoundedIcon from '@mui/icons-material/FavoriteRounded';
 import PeopleRoundedIcon from '@mui/icons-material/PeopleRounded';
 import ImageLogo from '../../Assets/logo/logo.png';
+import QuestionAnswerIcon from '@mui/icons-material/QuestionAnswer';
 import Image from 'next/image';
 import { auth } from "../../Firebase/firebase-config";
 import { signOut } from "firebase/auth";
@@ -88,9 +89,9 @@ const Sidebar = () => {
         <div>
         <h1 className='p-2 border-t-2  text-[14px] ' >Accounts</h1>
         <div className="relative flex items-center  gap-4 text-[18px] p-3 w-[12rem] rounded-[10px] hover:bg-slate-100 hover:border-r-[3px] border-violet-400 ">
-          <SettingsSuggestRoundedIcon className="text-2xl" />
-          <Link href="/help" className="">
-           Help
+          <QuestionAnswerIcon className="text-2xl" />
+          <Link href="/askQuestion" className="">
+           Ask a query
           </Link>
         </div>
         <div className="relative flex items-center  gap-4 text-[18px] p-3 w-[12rem] rounded-[10px] hover:bg-slate-100 hover:border-r-[3px] border-violet-400 ">
